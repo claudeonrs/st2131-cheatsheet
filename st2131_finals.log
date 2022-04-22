@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2022.4.20)  22 APR 2022 14:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2022.4.20)  22 APR 2022 22:34
 entering extended mode
 **./st2131_finals.tex
 (st2131_finals.tex
@@ -1075,7 +1075,7 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 244.
 
 [3] (st2131_finals.aux)
 Package rerunfilecheck Info: File `st2131_finals.out' has not changed.
-(rerunfilecheck)             Checksum: DC367E9DE198C94F6A44900C845AD1B0;1231.
+(rerunfilecheck)             Checksum: C15F86D01B6529FADA6C56A2E5173D74;1241.
  ) 
 Here is how much of TeX's memory you used:
  14627 strings out of 478864
@@ -1107,7 +1107,7 @@ a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/Claudeon/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Claudeo
 n/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/Claud
 eon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb>
-Output written on st2131_finals.pdf (3 pages, 224538 bytes).
+Output written on st2131_finals.pdf (3 pages, 225379 bytes).
 PDF statistics:
  155 PDF objects out of 1000 (max. 8388607)
  27 named destinations out of 1000 (max. 500000)
