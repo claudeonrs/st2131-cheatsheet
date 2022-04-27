@@ -103,7 +103,7 @@ Notation & PMF/PDF and Support & \makecell{Expected\\ Value} & Variance & MGF\\
 \hline
 \makecell{Beta \\ Beta$(a,b)$} & \makecell{$f(x) = \frac{1}{B(a,b)}x^{a-1}(1-x)^{b-1}$ \\ $x \in (0,1)$} & $\frac{a}{a+b}$ &$\frac{ab}{(a+b)^2(a+b+1)}$ & messy\\
 \hline
-\makecell{Chi-Square \\ $\chi^2_n$} & &$n$ &$2n$ &$(1-2t)^{-n/2}$\\
+\makecell{Chi-Square \\ $\chi^2_n$} & \makecell{$f(x) =\frac{1}{2^{n/2}\Gamma(n/2)}x^{n/2-1}e^{-x/2}$ \\ $x \in (0,\infty)$} &$n$ &$2n$ & \makecell{$(1-2t)^{-n/2}$ \\ $t < 1/2$ }\\
 
 \end{tabular}
 
@@ -111,10 +111,42 @@ Notation & PMF/PDF and Support & \makecell{Expected\\ Value} & Variance & MGF\\
 %\end{landscape}
 
 \section{Useful Results}
-\subsection{Combinatorial Analysis}
+\begin{multicols}{2}
+\subsection{Probability}
+\begin{description}
+ \item[Sample space] is the set of all possible outcomes of an experiment, usually denoted by $S$. For tossing two dice,
+ \begin{equation*}
+ \begin{split}
+ S &= \{(1,1),(1,2),\dots,(1,6),(2,1),\dots,(6,6)\} \\
+ &= \{(i,j): 1 \leq i,j\leq 6\}
+ \end{split}
+ \end{equation*}
+ \item[Event] Any subset $A$ of the sample space is an event
+ \item[Odds] The odds of an event $A$ is defined by $\frac{P(A)}{1-P(A)}$
+\end{description}
+ \subsubsection*{Increasing/Decreasing Events}
+ If $\{E_n\}$ is an increasing sequence of events, then $$\lim_{n\rightarrow \infty} E_n = \bigcup_{i=1}^{\infty}E_i$$
+ If $\{E_n\}$ is a decreasing sequence of events, then $$\lim_{n\rightarrow \infty} E_n = \bigcap_{i=1}^{\infty}E_i$$
+ If $\{E_n\}$ is either an increasing or decreasing sequence of events, then
+ $$P(\lim_{n\rightarrow \infty}E_n) = \lim_{n\rightarrow \infty}P(E_n)$$
+\subsubsection*{Conditional Probability}
+$$P(A|B) = P(A|BC)P(C|B) + P(A|BC^C)P(C^C|B)$$
+\end{multicols}
+\begin{description}
+\item[Inclusion/Exclusion Principle] Let $E_1, E_2, \dots, E_n$ be any events, then
+ \begin{equation*}
+ \begin{split}
+  P(E_1 \cup E_2 \cup \dots \cup E_n) = &\sum_{i=1}^{n}P(E_i) - \sum_{1 \leq i_1 < i_2 \leq n} P(E_{i_1} \cap E_{i_2}) + \cdots\\
+  & (-1)^{r+1}\sum_{1\leq i_1 < \cdots < i_r \leq n} P(E_{i_1} \cap \cdots \cap E_{i_r})\\
+  &+\cdots +  (-1)^{n+1}P(E_1 \cap \cdots \cap E_n)
+ \end{split}
+ \end{equation*}
+\end{description}
+
 \subsubsection*{Derangement/Matching Problem}
 $$P(\text{at least one match}) = 1 - \frac{1}{2!}+\frac{1}{3!} -\cdots (-1)^{n+1}\frac{1}{n!}$$
 $$P(k\text{ matches}) = {n \choose k} \frac{1}{n(n-1)\cdots(n-k+1)}\cdot \left({1- 1 + \frac{1}{2!}-\frac{1}{3!} +\cdots (-1)^{n-k}\frac{1}{(n-k)!}}\right)$$
+
 \begin{multicols}{2}
 
 
